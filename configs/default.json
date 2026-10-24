@@ -1,0 +1,25 @@
+{
+  "name": "default",
+  "map": "maps/simple.txt",
+  "generations": 500,
+  "seeds": 30,
+
+  "population_size": 200,
+  "max_points": 32,
+  "initial_points": 5,
+  "elite": 2,
+  "tournament_size": 3,
+  "crossover_prob": 0.9,
+  "mutation_prob": 0.2,
+  "mutation_sigma": 2.0,
+  "sigma_decay": 1.0,
+  "backend": "openmp",
+  "snapshot_every": 25,
+
+  "weights": {
+    "length": 1.0,
+    "collision": 100.0,
+    "smoothness": 0.0,
+    "clearance": 0.0
+  }
+}

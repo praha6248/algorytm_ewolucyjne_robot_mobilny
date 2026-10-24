@@ -1,0 +1,45 @@
+# --- Budowanie C++ / CMake ---
+build/
+build-*/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+compile_commands.json
+Testing/
+*.o
+*.a
+*.so
+*.out
+
+# Programy z apps/ i testy, gdyby ktos zbudowal je poza build/
+run_ga
+test_map_loading
+test_population
+test_collision
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.pytest_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Wyniki eksperymentow (generowane, do odtworzenia z configs/) ---
+results/
+*.gif
+
+# --- Edytory ---
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*~
+
+# --- System ---
+.DS_Store
