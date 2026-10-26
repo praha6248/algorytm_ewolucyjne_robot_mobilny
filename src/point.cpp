@@ -1,10 +1,10 @@
-#include "Point.h"
+#include "point.h"
 #include <cmath>
 
-Point::Point() 
+Point::Point()
     : xp(0.0), yp(0.0) {}
 
-Point::Point(double x, double y) 
+Point::Point(double x, double y)
     : xp(x), yp(y) {}
 
 // double Point::getX() const {

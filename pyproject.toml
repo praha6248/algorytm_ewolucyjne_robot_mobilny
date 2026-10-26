@@ -1,0 +1,17 @@
+[build-system]
+requires = ["scikit-build-core>=0.10", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "robot_ga"
+version = "0.1.0"
+description = "Algorytm ewolucyjny do planowania sciezki robota mobilnego (C++ + Python)"
+requires-python = ">=3.8"
+dependencies = ["numpy", "matplotlib"]
+
+[tool.scikit-build]
+cmake.build-type = "Release"
+wheel.packages = ["python/robot_ga"]
+
+[tool.scikit-build.cmake.define]
+ROBOT_GA_BUILD_EXE = "OFF"
